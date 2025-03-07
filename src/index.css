@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-sm: 350px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+  --color-red: #e71d36;
+  --color-yellow: #ff9f1c;
+  --color-blue: #011627;
+  --color-teal: #2ec486;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --font-special: "Open Sans";
+  --font-body: "Montserrat";
+}
+
+.navbar {
+  border-bottom: 0.5px solid hsla(0, 0%, 77%, 0.75);
+}
+
+.social-icons{
+  background: #ffffff;
+  color: #e71d36;
+  padding: 10px 10px;
+  border-radius: 50%;
+}
