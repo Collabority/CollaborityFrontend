@@ -10,8 +10,8 @@ const Navbar = () => {
     setMenuOpen(!menuOpen);
   };
   return (
-    <nav className="font-special navbar max-w-full mx-auto w-full fixed z-20 flex gap-4">
-      <div className="flex justify-between items-center w-full max-w-full mx-auto bg-white p-5  ">
+    <nav className="font-special navbar max-w-full mx-auto w-full fixed z-20 flex gap-4 bg-white">
+      <div className="flex justify-between items-center w-full max-w-full mx-auto p-5  ">
         <NavbarLogo />
         <div className={`${menuOpen ? "sm:block" : "sm:hidden"} lg:block`}>
           <NavbarLinks />

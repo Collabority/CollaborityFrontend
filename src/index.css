@@ -17,6 +17,7 @@
   --color-white: #ffffff;
   --font-special: "Open Sans";
   --font-body: "Montserrat";
+  --font-new: "Anton"
 }
 
 .navbar {
@@ -28,4 +29,13 @@
   color: #e71d36;
   padding: 10px 10px;
   border-radius: 50%;
+  transition: all ease-in-out 0.2s;
+}
+.social-icons:hover {
+  background: #011627;
+  color: #ffffff;
+  padding: 10px 10px;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px #011627; /* Shadow effect */
+  transform: translateY(-5px); /* Moves the icon upwards */
 }
