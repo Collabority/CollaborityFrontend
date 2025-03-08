@@ -12,9 +12,10 @@
   --color-red: #e71d36;
   --color-yellow: #ff9f1c;
   --color-blue: #011627;
-  --color-teal: #2ec486;
+  --color-teal: #2ec4B6;
   --color-black: #000000;
   --color-white: #ffffff;
+  --color-cream: #FDF2DB;
   --font-special: "Open Sans";
   --font-body: "Montserrat";
   --font-new: "Anton"
@@ -29,13 +30,37 @@
   color: #e71d36;
   padding: 10px 10px;
   border-radius: 50%;
-  transition: all ease-in-out 0.2s;
+  transition: all, transform ease 350ms;
+
+  box-shadow: 0px 5px 8px 1px rgb(0, 0, 0, 0.24);
+
 }
-.social-icons:hover {
+.social-icons:is(:hover) {
+  box-shadow: 0px 10px 15px 5px rgba(62, 62, 62, 0.24);
   background: #011627;
   color: #ffffff;
   padding: 10px 10px;
   border-radius: 50%;
-  box-shadow: 0 4px 10px #011627; /* Shadow effect */
-  transform: translateY(-5px); /* Moves the icon upwards */
+  /* Shadow effect */
+  transform: translateY(-8px); /* Moves the icon upwards */
+}
+
+.wework {
+  background-image: url(/assets/elipse.svg), url(/assets/vector.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom, 100% 0;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-slide {
+  display: flex;
+  animation: slide 10s linear infinite;
 }
